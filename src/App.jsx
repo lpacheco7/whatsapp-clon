@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
-import HomeScreen from './Screens/HomeScreen/HomeScreen'
-import ContactScreen from './Screens/ContactScreen/ContactScreen'
-import ErrorNotFoundScreen from './Screens/ErrorNotFoundScreen/ErrorNotFoundScreen'
-import ContactsContextProvider from './context/ContactsContext'
+import HomeScreen from './screens/HomeScreen/HomeScreen'
+import ContactScreen from './screens/ContactScreen/ContactScreen'
+import ErrorNotFoundScreen from './screens/ErrorNotFoundScreen/ErrorNotFoundScreen'
+import ContactsContextProvider from './Context/ContactsContext'
 
 
 function App() {
