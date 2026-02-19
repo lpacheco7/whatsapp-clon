@@ -2,7 +2,7 @@
 Simular la interaccion con un servidor
 */
 
-import contacts from "c:/Users/USUARIO/Desktop/LORENZO/CURSOS/FULL STACK/CLASE_27/src/data/contactsData";
+import contacts from "../data/contactsData";
 
 export function getContacts () {
     return contacts
