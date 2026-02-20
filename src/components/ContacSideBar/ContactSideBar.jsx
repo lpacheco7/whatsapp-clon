@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { ContactsContext } from '../../Context/ContactsContext'
 import { Link } from 'react-router'
+import './ContactSideBar.css'
 
 export default function ContactSideBar({ contactsState }) {
     /* useContext es un hook que nos permite consumir el contexto */
@@ -8,9 +9,9 @@ export default function ContactSideBar({ contactsState }) {
     /* una vez consumido nos traera el valor del value del contexto */
     const { contacts, favorite_name } = useContext(ContactsContext)
     return (
-        <div>
+        <div className='contact-sidebar'>
             <h2>Chats</h2>
-            <div>
+            <div className='contact-list'>
                 {
                     contacts.map(
                         (contact) => {
@@ -20,19 +21,14 @@ export default function ContactSideBar({ contactsState }) {
                                         to={`/contact/${contact.id}`}
                                         key={contact.id}
                                     >
-                                        <img
-                                            src={contact.profile_picture}
-                                            alt={contact.name}
-                                            style={
-                                                {
-                                                    width: '200px'
-                                                }
-                                            }
-                                        />
-                                        <h3>{contact.name}</h3>
-                                        <span>{contact.last_time_connection}</span>
-                                        <br />
-                                        <hr />
+                                        <div className='contact'>
+                                            <img className='profile-picture'
+                                                src={contact.profile_picture}
+                                                alt={contact.name}
+                                            />
+                                            <h3>{contact.name}</h3>
+                                            {/* <span>{contact.last_time_connection}</span> */}
+                                        </div>
                                     </Link>
                                 </div>
                             )

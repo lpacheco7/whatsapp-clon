@@ -42,7 +42,29 @@ const contacts = [
                 is_read: true,
             }
         ]
-    }
+    },
+    {
+        id: 3,
+        name: 'Homero Simpson',
+        profile_picture: 'https://i.ytimg.com/vi/TwYzwloa9_E/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDzvtQV4k0D0jv1eAWjUsZGLLeh5A',
+        last_time_connection: 'Hace 3 horas',
+        messages: [
+            {
+                id: 1,
+                text: 'Hola Homero',
+                send_by_me: true,
+                created_at: '2024-06-01T12:00:00Z',
+                is_read: true,
+            },
+            {
+                id: 2,
+                text: 'Todo bien, vos?',
+                send_by_me: false,
+                created_at: '2024-06-01T12:00:00Z',
+                is_read: true,
+            }
+        ]
+    },
 ]
 
 export default contacts
