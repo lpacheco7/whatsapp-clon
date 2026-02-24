@@ -10,7 +10,7 @@ export default function ContactSideBar({ contactsState }) {
     const { contacts } = useContext(ContactsContext)
     return (
         <div className='contact-sidebar'>
-            <h2>Chats</h2>
+            <Link to={'/'}> <h2>Chats</h2> </Link>
             <div className='contact-list'>
                 {
                     contacts.map(
@@ -27,7 +27,6 @@ export default function ContactSideBar({ contactsState }) {
                                                 alt={contact.name}
                                             />
                                             <h3>{contact.name}</h3>
-                                            {/* <span>{contact.last_time_connection}</span> */}
                                         </div>
                                     </Link>
                                 </div>

@@ -5,6 +5,7 @@ export default function HomeScreen({contactsState}) {
   return (
     <div>
       <ContactSideBar contactsState={contactsState} />
+      <h1>HOLA</h1>
     </div>
   )
 }

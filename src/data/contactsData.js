@@ -40,6 +40,13 @@ const contacts = [
                 send_by_me: false,
                 created_at: '2024-06-01T12:00:00Z',
                 is_read: true,
+            },
+            {
+                id: 3,
+                text: 'Todo bien, vos?',
+                send_by_me: true,
+                created_at: '2024-06-01T12:00:00Z',
+                is_read: true,
             }
         ]
     },

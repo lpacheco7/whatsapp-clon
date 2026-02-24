@@ -1,0 +1,10 @@
+.message-sent{
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+
+.message-received{
+    background-color: lightblue;
+    border-radius: 10px;
+    padding: 5px;
+}
