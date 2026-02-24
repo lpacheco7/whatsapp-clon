@@ -14,19 +14,19 @@ export default function ContactScreen() {
       <ContactsSideBar />
 
       {/* COMPONENTE ContactInfo */}
-      
+
       <div className='chat'>
         {
           !contact_selected /* COMPONENTE ContactMessages*/
             ? <div>
-              <h1>El contacto seleccionado no existe</h1>
-            </div>
+                <h1>El contacto seleccionado no existe</h1>
+              </div>
             : <div>
-              <h1>El contacto seleccionado es: {contact_selected.name}</h1>
-              <h2>Última vez conectado: {contact_selected.last_time_connection}</h2>
-            </div>
+                <h1>El contacto seleccionado es: {contact_selected.name}</h1>
+                <h1>Última vez conectado: {contact_selected.last_time_connection}</h1>
+              </div>
         }
-        
+
         <div className='messages'> {/* HACER UN COMPONENTE PARA EL CHAT */}
           {
             contact_selected.messages.map(message => {
