@@ -21,7 +21,7 @@ const ContactsContextProvider = ({ children }) => {
                             id: contact.messages.length + 1,
                             text: new_message,
                             send_by_me: true,
-                            created_at: new Date().toISOString(),
+                            created_at: 'ahora',
                             is_read: false,
                         })
                     }

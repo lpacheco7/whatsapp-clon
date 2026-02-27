@@ -22,7 +22,7 @@ export default function ContactSideBar({ contactsState }) {
                                         key={contact.id}
                                     >
                                         <div className='contact'>
-                                            <img className='profile-picture'
+                                            <img className='profile-picture-sidebar'
                                                 src={contact.profile_picture}
                                                 alt={contact.name}
                                             />

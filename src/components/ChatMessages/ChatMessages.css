@@ -1,10 +1,39 @@
-.message-sent{
+.message-sent {
     background-color: lightgreen;
-    border-radius: 10px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 2px 15px;
+    padding: 8px;
+    gap: 8px;
+    align-self: flex-end;
+
 }
 
-.message-received{
+.message-received {
     background-color: lightblue;
-    border-radius: 10px;
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 2px 15px;
+    padding: 8px;
+    gap: 8px;
+    align-self: flex-start;
+}
+
+.message-info {
+    display: flex;
+    gap: 5px;
+    font-size: smaller;
+    align-self: flex-end;
+}
+
+.messages {
+    max-height: 495px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
 }

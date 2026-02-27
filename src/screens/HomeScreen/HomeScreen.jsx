@@ -1,11 +1,13 @@
 import React from 'react'
 import ContactSideBar from '../../components/ContacSideBar/ContactSideBar'
 
-export default function HomeScreen({contactsState}) {
+export default function HomeScreen({ contactsState }) {
   return (
-    <div>
+    <div className='home-screen'>
       <ContactSideBar contactsState={contactsState} />
-      <h1>HOLA</h1>
+      <div className='home-text'>
+        <h1>Seleccione un chat</h1>
+      </div>
     </div>
   )
 }

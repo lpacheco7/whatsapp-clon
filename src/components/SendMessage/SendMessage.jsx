@@ -11,15 +11,17 @@ export default function SendMessage({ contact_id }) {
         e.preventDefault()
         const new_message = e.target.mensaje_nuevo.value
         e.target.mensaje_nuevo.value = ''
-        addNewMessage(contact_id,new_message)
+        addNewMessage(contact_id, new_message)
     }
     return (
-        <div>
-            <form onSubmit={handleSubmitNewMessage} id='777'>
-                <label className='form-label' htmlFor="mensaje_nuevo">Mensaje Nuevo</label>
-                <textarea placeholder="Escribe un mensaje" id='mensaje_nuevo' name='mensaje_nuevo' required/>
-                <button type='submit'><span><IoSend/></span></button>
-            </form>
+        <div className='send-message-container'>
+            <div className='send-message'>
+                <form onSubmit={handleSubmitNewMessage} id='777'>
+                    <label className='form-label' htmlFor="mensaje_nuevo">Mensaje Nuevo</label>
+                    <textarea placeholder="Escribe un mensaje" id='mensaje_nuevo' name='mensaje_nuevo' required />
+                    <button type='submit'><span><IoSend /></span></button>
+                </form>
+            </div>
         </div>
     )
 }
