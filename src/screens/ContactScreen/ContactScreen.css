@@ -1,6 +1,7 @@
 .contact-screen {
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 
 .chat {
@@ -32,4 +33,19 @@
     height: 70px;
     border-radius: 50px;
     padding: 8px;
+}
+
+.back-arrow{
+        display: none;
+    }
+
+@media (max-width: 768px) {
+    .contact-sidebar-container {
+        display: none;
+    }
+    .back-arrow{
+        display: flex;
+        margin: 10px;
+        font-size: larger;
+    }
 }

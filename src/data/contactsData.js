@@ -115,7 +115,7 @@ const contacts = [
             },
             {
                 id: 5,
-                text: 'NHoy lo ve dirección.',
+                text: 'Hoy lo ve dirección.',
                 send_by_me: false,
                 created_at: '08:03',
                 is_read: true,
